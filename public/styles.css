@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Format */
+
+html {
+  width: 100%;
+}
+
+body {
+  background-color: hsl(218, 23%, 16%);
+  /* margin: auto; */
+  font-family: "Manrope", sans-serif;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%; */
+}
+
+main {
+      align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+/* Sub Format */
+
+.smallcontainer {
+  max-width: 540px;
+      width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: hsl(217, 19%, 24%);
+  padding: 3em 3em 0 3em;
+  border-radius: 1.3em;
+}
+
+.patternmob {
+  display: none;
+}
+
+button {
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 100%;
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 2rem;
+    margin-top: 0.6em;
+  border: none;
+}
+
+button:disabled {
+  background-color: grey;
+}
+
+button:hover {
+  box-shadow: hsl(150, 100%, 66%) 0px 0px 16px;
+  cursor: pointer;
+}
+
+.patterndesk, .patternmob{
+  width: 100%;
+}
+
+/* Text mods */
+
+span {
+  color: hsl(150, 100%, 66%);
+  font-size: 0.8125rem;
+  letter-spacing: 3.67px;
+}
+
+h1 {
+  color: hsl(193, 38%, 86%);
+  font-size: 1.75rem;
+  padding: 0.8571em 0 1.4286em 0;
+}
+
+@media (max-width: 375px) {
+  body {
+    min-height: auto;
+    margin-top: 120px;
+}
+  .smallcontainer {
+    max-width: 343px;
+    padding: 2.5rem 2rem 0 2rem;
+  }
+
+  .patternmob {
+    display: flex;
+  }
+
+  .patterndesk {
+    display: none;
+  }
+
+  span {
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+  }
+
+  button {
+    margin-top: 0;
+  }
+}
