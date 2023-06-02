@@ -15,9 +15,9 @@ function Text(props) {
 
       </p>
       <picture>
-        <source srcset={patterndesk} 
+        <source srcSet={patterndesk} 
           media="(max-width: 1440px)"/>
-        <source srcset={patternmob}
+        <source srcSet={patternmob}
           media="(max-width: 375px)" />
         <img src={patterndesk} alt="" className="pattern" />
       </picture>

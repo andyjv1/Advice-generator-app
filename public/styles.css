@@ -26,7 +26,7 @@ main {
 }
 /* Sub Format */
 
-.smallcontainer {
+.small-container {
   max-width: 343px;
   padding: 2.5em 2em 0 2em;
   position: absolute;
@@ -88,7 +88,7 @@ p {
   color:red
 }
 @media (min-width: 376px) {
-  .smallcontainer {
+  .small-container {
     padding: 3em 3em 0 3em;
     max-width: 540px;
     width: 80%;

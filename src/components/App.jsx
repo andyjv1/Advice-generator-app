@@ -27,7 +27,7 @@ function App() {
 
     return (
         <main>
-            <div className="smallcontainer" aria-live="polite">
+            <div className="small-container" aria-live="polite">
                 <Text
                     Id={text.id}
                     adviceText={text.advice}
